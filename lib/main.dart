@@ -3,7 +3,7 @@ import 'package:firepost/pages/home_page.dart';
 import 'package:firepost/pages/signin_page.dart';
 import 'package:firepost/pages/signup_page.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

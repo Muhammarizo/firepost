@@ -1,3 +1,4 @@
+import 'package:firepost/services/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,7 +22,9 @@ class _HomePageState extends State<HomePage> {
             'Logout',
             style: TextStyle(color: Colors.white),
           ),
-          onPressed: () {},
+          onPressed: () {
+            AuthService.signOutUser(context);
+          },
         ),
       ),
     );
