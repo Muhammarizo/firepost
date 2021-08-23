@@ -70,6 +70,10 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 10,
                 ),
                 TextField(
+                  cursorRadius: Radius.circular(0),
+                  cursorColor: Colors.red,
+                  showCursor: true,
+                  obscureText: true,
                   controller: passwordController,
                   decoration: InputDecoration(hintText: 'Password'),
                 ),
@@ -116,11 +120,11 @@ class _SignUpPageState extends State<SignUpPage> {
               ],
             ),
           ),
-
-          isLoading?
-          Center(
-            child: CircularProgressIndicator(),
-          ): SizedBox.shrink(),
+          isLoading
+              ? Center(
+                  child: CircularProgressIndicator(),
+                )
+              : SizedBox.shrink(),
         ],
       ),
     );
